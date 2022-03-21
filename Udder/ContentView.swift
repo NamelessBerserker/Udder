@@ -10,11 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Label("Udder", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
+            Label("Udder", systemImage: "")
             Spacer()
             Text("Fresh Milk On Demand")
                 .padding()
+            
+                
             Spacer()
+            
+            Image("milk")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(.bottom)
+            
         }
     }
 }
